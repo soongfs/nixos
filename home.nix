@@ -10,9 +10,6 @@
   };
 
   home.packages = with pkgs; [
-    # zoxide
-    # bat
-    # clash-rs
     fastfetch
     nil
     pyright
@@ -21,7 +18,7 @@
   programs.helix = {
     enable = true;
     settings = {
-      theme = "dracula";
+      theme = "catppuccin_mocha";
       editor = {
         line-number = "relative";
         lsp.display-messages = true;
@@ -55,7 +52,7 @@
     enable = true;
     enableFishIntegration = true;
     settings = {
-      theme = "Dracula";
+      theme = "Catppuccin Mocha";
       font-family = "Maple Mono NF CN";
       font-size = 14;
       window-decoration = "none";
@@ -70,7 +67,7 @@
     enable = true;
     enableFishIntegration = true;
     settings = {
-      theme = "dracula";
+      theme = "catppuccin-mocha";
     };
   };
 
@@ -95,7 +92,8 @@
       fcitx5-gtk # alternatively, kdePackages.fcitx5-qt
       # fcitx5-chinese-addons  # table input method support
       # fcitx5-nord # a color theme
-      fcitx5-tokyonight
+      # fcitx5-tokyonight
+      catppuccin-fcitx5
       qt6Packages.fcitx5-chinese-addons
     ];
   };
@@ -104,7 +102,7 @@
     git = true;
     colors = "auto";
     icons = "auto";
-    theme = "dracula";
+    theme = "catppuccin";
     enableFishIntegration = true;
   };
 
@@ -112,7 +110,7 @@
     enable = true;
     # theme = "dracula";
     settings = {
-      theme = "dracula";
+      theme = "catppuccin-mocha";
       preview.image_filter = "kitty";
     };
     enableFishIntegration = true;
@@ -120,5 +118,10 @@
 
   programs.bottom = {
     enable = true;
+  };
+
+  programs.lazygit = {
+    enable = true;
+    enableFishIntegration = true;
   };
 }
